@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: rgba(204, 204, 247, 0.301);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: #fff;
+    font-style: italic;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 3px solid #140166;
+    margin-bottom: 56px;
+    background-color: blue;
+}
+
+header .container ul li {
+    list-style: none;
+    display: inline;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    width: 100%;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    border-bottom: 3px solid blue;
+}
+
+.sabor img {
+    max-width: 100%;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+.sabores {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+button {
+    display: block;
+    width: 98%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(2, 74, 83);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container-flex img {
+        width: 100%;
+    }
+    
+    .container {
+        max-width: 98%;
+    }
+    
+    .sabores {
+        display: block;
+    }
+
+    .sabores .sabor {
+        margin-bottom: 32px;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+
+    .container-flex {
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+    }
+    .container-flex {
+        display: block;
+    }
+
+
+    .sabores {
+        grid-template-columns: 49% 49%;
+    }
+}
